@@ -7,26 +7,18 @@ Turn an ESP8266 into a real Wi-Fi extender / mini router with NAT, web-based set
 🔹 Web Configuration Page
 ![Image](https://github.com/user-attachments/assets/8ee8f5e3-1e11-46de-9115-8d183c8a098c)
 🔹 SSID Auto Scan Dropdown
+![Image](https://github.com/user-attachments/assets/1707fe18-d4ce-4539-9cb8-765555ca1baf)
 
-🔹 Connected Status
+## 📡 What This Project Does
 
-📁 Recommended folder structure:
-
-project/
- ├─ screenshots/
- │   ├─ web-ui.png
- │   ├─ ssid-scan.png
- │   └─ connected.png
- └─ README.md
-📡 What This Project Does
-This project converts an ESP8266 (NodeMCU) into a real NAT-based Wi-Fi extender:
+### This project converts an ESP8266 (NodeMCU) into a real NAT-based Wi-Fi extender:
 ESP8266 creates its own Wi-Fi Access Point (AP)
 ESP8266 connects to an existing router (STA)
 NAT routes traffic between AP ↔ STA
 Clients get real internet access
 A web interface is used for setup
 This is not just a repeater — it performs true routing.
-✨ Features
+## ✨ Features
 ✅ Real NAT (lwIP NAPT)
 ✅ AP + STA mode simultaneously
 ✅ Web-based configuration
@@ -37,9 +29,7 @@ This is not just a repeater — it performs true routing.
 ✅ Web reset (clears saved Wi-Fi)
 ✅ LED status indicators
 ✅ Works like a mini router
-🧠 How It Works (Network Flow)
-Copy code
-
+##🧠 How It Works (Network Flow)
 📱 Phone / Laptop
      |
      | 192.168.4.x
