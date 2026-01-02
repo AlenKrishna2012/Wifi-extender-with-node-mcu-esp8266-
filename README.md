@@ -72,7 +72,7 @@ Reset saved credentials via web
 No reboot required for scanning.
 ## 💾 File System (LittleFS)
 Wi-Fi credentials are stored in:
-**/wifi.txt**
+***/wifi.txt***
 ### Format:
 
 SSID
