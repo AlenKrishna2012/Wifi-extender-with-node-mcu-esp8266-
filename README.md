@@ -12,11 +12,17 @@ Turn an ESP8266 into a real Wi-Fi extender / mini router with NAT, web-based set
 ## 📡 What This Project Does
 
 ### This project converts an ESP8266 (NodeMCU) into a real NAT-based Wi-Fi extender:
+
 ESP8266 creates its own Wi-Fi Access Point (AP)
+
 ESP8266 connects to an existing router (STA)
+
 NAT routes traffic between AP ↔ STA
+
 Clients get real internet access
+
 A web interface is used for setup
+
 This is not just a repeater — it performs true routing.
 
 ## ✨ Features
