@@ -1,4 +1,4 @@
-##*ESP8266 Wi-Fi NAT Extender with Web Configuration*
+##***ESP8266 Wi-Fi NAT Extender with Web Configuration***
 
 Turn an ESP8266 into a real Wi-Fi extender / mini router with NAT, web-based setup, auto Wi-Fi scanning, and credential storage.
 📸 Screenshots
