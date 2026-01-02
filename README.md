@@ -21,16 +21,26 @@ This is not just a repeater — it performs true routing.
 
 ## ✨ Features
 ✅ Real NAT (lwIP NAPT)
+
 ✅ AP + STA mode simultaneously
+
 ✅ Web-based configuration
+
 ✅ Auto Wi-Fi scanning every 5 seconds
+
 ✅ SSID dropdown selection
+
 ✅ Password input
+
 ✅ Credentials saved in LittleFS
+
 ✅ Web reset (clears saved Wi-Fi)
+
 ✅ LED status indicators
+
 ✅ Works like a mini router
-##🧠 How It Works (Network Flow)
+
+## 🧠 How It Works (Network Flow)
 📱 Phone / Laptop
      |
      | 192.168.4.x
@@ -44,49 +54,56 @@ This is not just a repeater — it performs true routing.
      IP: From Router (e.g. 192.168.1.50)
      |
 🌍 Internet
-🌐 Default Network Settings
+## 🌐 Default Network Settings
 Item
-Value
-AP SSID
-ESP_NAT_Extender
-AP Password
-12345678
-AP IP Address
-192.168.4.1
-Web UI
-http://192.168.4.1
-🖥️ Web Interface Features
-Automatically scans nearby Wi-Fi networks
-SSID list refreshes every 5 seconds
-Select SSID from dropdown
-Enter Wi-Fi password
-Connect to upstream router
-Reset saved credentials via web
-No reboot required for scanning.
-💾 File System (LittleFS)
-Wi-Fi credentials are stored in:
-Copy code
 
-/wifi.txt
-Format:
-Copy code
+Value
+
+AP SSID
+
+ESP_NAT_Extender
+
+AP Password
+
+12345678
+
+AP IP Address
+
+192.168.4.1
+
+Web UI
+
+http://192.168.4.1
+
+## 🖥️ Web Interface Features
+Automatically scans nearby Wi-Fi networks
+
+SSID list refreshes every 5 seconds
+
+Select SSID from dropdown
+
+Enter Wi-Fi password
+
+Connect to upstream router
+
+Reset saved credentials via web
+
+No reboot required for scanning.
+## 💾 File System (LittleFS)
+Wi-Fi credentials are stored in:
+**/wifi.txt**
+### Format:
 
 SSID
+
 PASSWORD
-🔄 Reset Button
-Deletes /wifi.txt
-Reboots ESP
-Starts fresh AP mode
-💡 LED Indications
-LED
-GPIO
-Status
-Power LED
-GPIO 2
-ON = Power OK
-Connection LED
-GPIO 16
-Blinking = Connecting
+## 🔄 Reset Button
+Deletes /wifi.txt and Reboots ESP then starts fresh AP mode
+
+## 💡 LED Indications
+LED          GPIO            Status
+power        GPIO 2          ON = Power OK
+Connection   GPIO 16         Blinking = Connecting
 Connection LED
 GPIO 16
 Solid = Connected + NAT Active
