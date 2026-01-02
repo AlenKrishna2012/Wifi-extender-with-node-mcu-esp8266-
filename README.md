@@ -1,5 +1,7 @@
 # ****ESP8266 Wi-Fi NAT Extender with Web Configuration****
 
+# this can work on most of the models
+
 Turn an ESP8266 into a real Wi-Fi extender / mini router with NAT, web-based setup, auto Wi-Fi scanning, and credential storage.
 
 ## Screenshots
@@ -107,12 +109,17 @@ Optional LEDs + resistors
 ### Correct settings are critical for NAT to work.
 Copy code
 
-Board           : NodeMCU 1.0 (ESP-12E Module)
-CPU Frequency   : 160 MHz
-Flash Size      : 4MB
-Flash Mode      : DIO
-LWIP Variant    : v2 Higher Bandwidth
-Upload Speed    : 921600 (or 115200 if unstable)
+Board           : ***NodeMCU 1.0 (ESP-12E Module)***
+
+CPU Frequency   : ***80 MHz***
+
+Flash Size      : ***4MB***
+
+Flash Mode      : ***DIO***(if available
+
+LWIP Variant    : ***v2 Higher Bandwidth*** (not***v2 Higher Bandwidth(no features)***)
+
+Upload Speed    : **115200**
 
 ## 📦 Required Libraries
 
