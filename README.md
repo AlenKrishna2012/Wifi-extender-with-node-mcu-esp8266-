@@ -101,20 +101,29 @@ PASSWORD
 Deletes /wifi.txt and Reboots ESP then starts fresh AP mode
 
 ## 💡 LED Indications
-LED          GPIO            Status
-power        GPIO 2          ON = Power OK
-Connection   GPIO 16         Blinking = Connecting
-Connection LED
-GPIO 16
-Solid = Connected + NAT Active
-⚠️ Built-in LED logic may be inverted on some boards.
-🔧 Hardware Required
+The **Power LED turns ON** as soon as the ESP8266 is powered, indicating that the device is receiving power and has started successfully.
+
+The **Connection LED blinks continuously** while the ESP8266 is scanning for available Wi-Fi networks or trying to connect to the selected Wi-Fi network.
+
+The **Connection LED turns ON (steady)** when the ESP8266 successfully connects to the target Wi-Fi network and internet routing is active.
+
+If **the Connection LED keeps blinking for a long time**, it indicates that the Wi-Fi connection has failed or the entered password is incorrect.
+
+When the device is reset from the web interface, **both LEDs briefly turn OFF**, and the ESP8266 restarts to factory Wi-Fi settings.
+### ⚠️ Built-in LED logic may be inverted on some boards.
+
+
+## 🔧 Hardware Required
 ESP8266 (NodeMCU / ESP-12E / ESP-12F)
+
 USB cable
+
 Stable 5V power supply
+
 Optional LEDs + resistors
-⚙️ Arduino IDE Settings (IMPORTANT)
-Correct settings are critical for NAT to work.
+
+## ⚙️ Arduino IDE Settings (IMPORTANT)
+### Correct settings are critical for NAT to work.
 Copy code
 
 Board           : NodeMCU 1.0 (ESP-12E Module)
@@ -123,42 +132,59 @@ Flash Size      : 4MB
 Flash Mode      : DIO
 LWIP Variant    : v2 Higher Bandwidth
 Upload Speed    : 921600 (or 115200 if unstable)
-📦 Required Libraries
+
+## 📦 Required Libraries
+
 Install via Arduino Library Manager:
+
 ESP8266WiFi
+
 ESPAsyncWebServer
+
 AsyncTCP
+
 LittleFS
+
 DNSServer
+
 NAT (lwIP NAPT) is included in the ESP8266 core.
-🚀 How to Use
+
+## 🚀 How to Use
 Flash the code to ESP8266
+
 Power on the device
+
 Connect to Wi-Fi:
-Copy code
 
-ESP_NAT_Extender
+**ESP_NAT_Extender**
+
 Open browser:
-Copy code
 
-http://192.168.4.1
+search:**http://192.168.4.1**
+
 Select SSID
+
 Enter password
+
 Click Connect
+
 Wait for connection LED to turn solid
-🎉 You now have internet through the ESP8266!
-📈 Performance
+
+**🎉 You now have internet through the ESP8266!**
+
+## 📈 Performance
 Typical speed: 15–25 Mbps
+
 Depends on signal quality & router
+
 Suitable for browsing, IoT, light streaming
-⚠️ Limitations
+
+## ⚠️ Limitations
+
 Limited RAM (ESP8266)
+
 Not suitable for heavy traffic
+
 No WPA2-Enterprise
+
 No advanced firewall rules
-🛠️ Possible Improvements
-Captive portal auto-detection (Android/iOS)
-ESP32 version (higher speed)
-Status dashboard
-OTA firmware update
-Signal strength graph
