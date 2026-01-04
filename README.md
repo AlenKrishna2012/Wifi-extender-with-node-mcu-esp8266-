@@ -10,10 +10,10 @@ Turn an ESP8266 into a **real Wi-Fi extender / mini router** with **NAT**, **web
 ## 📸 Screenshots
 
 ### 🔹 Web Configuration Page
-![Web UI](https://github.com/user-attachments/assets/8ee8f5e3-1e11-46de-9115-8d183c8a098c)
+![Web Configuration Page](https://github.com/user-attachments/assets/8ee8f5e3-1e11-46de-9115-8d183c8a098c)
 
 ### 🔹 SSID Auto-Scan Dropdown
-![SSID Scan](https://github.com/user-attachments/assets/1707fe18-d4ce-4539-9cb8-765555ca1baf)
+![SSID Auto-Scan Dropdown](https://github.com/user-attachments/assets/1707fe18-d4ce-4539-9cb8-765555ca1baf)
 
 ---
 
